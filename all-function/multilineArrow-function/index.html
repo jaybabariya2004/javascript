@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+
+        //1) initilaization
+        console.log("1 function start")
+        let one = (a,b) => {
+            let name = {
+                sum: a+b
+            }
+            return name;
+        }
+        //invoke
+        let sum = one(5, 20)
+        console.log(sum)
+        console.log("1 function end")
+        console.log("================================================")
+
+        //2) initilaization
+        console.log("2 function start")
+        let two = (a,b) => {
+            let name = {
+                result: a-b
+            }
+            return name;
+        }
+        //invoke
+        let result = one(53, 20)
+        console.log(result)
+        console.log("2 function end")
+        console.log("================================================")
+
+        //3) initilaization
+        console.log("3 function start")
+        let three = (a,b) => {
+            let name = {
+                result: a*b
+            }
+            return name;
+        }
+        //invoke
+        let twins = three(53, 20)
+        console.log(twins)
+        console.log("3 function end")
+        console.log("================================================")
+
+        //4) initilaization
+        console.log("4 function start")
+        let four = (a,b) => {
+            let name = {
+                result: a/b
+            }
+            return name;
+        }
+        //invoke
+        let twin = four(53, 20)
+        console.log(twin)
+        console.log("4 function end")
+        console.log("================================================")
+    </script>
+</body>
+
+</html>

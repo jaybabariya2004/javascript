@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        // 1) initilaization 
+        console.log("1 function start")
+        function test(a,b){
+            let data={
+                add: a+b,
+                mul: a*b
+            }
+            return data
+        }
+        // invoke (call)
+        let result = test(3,4)
+        console.log(result)
+        console.log("1 function end")
+
+        // 2) initilization
+
+        console.log("2 function start")
+        function main(){
+            let veer={
+                name: "jay",
+                age: "20"
+            }
+            return veer
+        }
+
+        //invoke
+        let twins = main()
+        console.log(twins)
+        console.log("2 function end")
+
+        // 3) initilization
+
+        console.log("3 function start")
+
+        function keem(){
+            let data = {
+                name: "jely",
+                age: "20",
+                contact: 9876544560,
+                adharNo: 23456789,
+                panNo: 987654321
+            }
+            schoolInfo = {
+                schoolname: "GD goynka"
+            }
+            return {data,...schoolInfo}
+        }
+        
+        //invoke
+        let chek = keem()
+        console.log(chek)
+        console.log("3 function end")
+
+        // 4)initilization
+
+        console.log("4 function start")
+
+        function aekant(){
+           let name = {
+            name : "sardar",
+            std : "12",
+            percentage : "71.85"
+           }
+           return name
+        }
+
+        //invoke
+        let mite = aekant()
+        console.log(mite)
+        console.log("4 function end")
+
+        // 5)initilization
+
+        console.log("5 function start")
+
+        function apple(){
+            let data = {
+                fruit: "apple",
+                dryfruit: "kaju",
+            }
+            return data
+        }
+
+        let param = apple()
+        console.log(param)
+        console.log("5 function end")
+
+        // 6)initilization
+        console.log("6 function start")
+
+        function cricket(){
+            let data = {
+                opener: "rohit",
+                middle_order: "kohli",
+                finisher: "hardik"
+            }
+            return data
+        }
+
+        let ring = cricket()
+        console.log(ring)
+        console.log("6 function end")
+
+        // 7)initilization
+
+        console.log("7 function start")
+
+        function ganesh(){
+            let meen = {
+                saptember: "ganesh",
+                octomber: "navratri",
+                navember: "diwali",
+            }
+            return meen
+        }
+
+        //invoke
+        let month = ganesh()
+        console.log(month)
+        console.log("7 function end")
+
+        // 8)initilization
+        console.log("8 function start")
+
+        function car(){
+            let chip = {
+                volkshwegan: "vento",
+                hundai: "i20",
+                toyota: "fortuner"
+            }
+            return chip
+        }
+
+        //invoke
+        let singh = car()
+        console.log(singh)
+        console.log("8 function end")
+
+        // 9)initilization
+        console.log("9 function start")
+
+        function movie(){
+            let bollywood={
+                tigerShorf: "Baghi",
+                Sidharth: "shershanh",
+                akshay: "suryavanshi"
+            }
+            let south={
+                prabhas: "bahubali",
+                kgf: "rokky"
+            }
+            return {bollywood,...south}
+        }
+
+        //invoke
+        let temp = movie()
+        console.log(temp)
+        console.log("9 function end")
+
+        // 10)initilization
+        console.log("10 function start")
+
+        function game(){
+            let big = {
+                game1: "cricket",
+                game2: "football"
+            }
+            return big
+        }
+
+        //invoke
+        let company = game()
+        console.log(company)
+        console.log("10 function end")
+    </script>
+
+</body>
+</html>
