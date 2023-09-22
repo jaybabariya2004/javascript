@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //2) initilaization
+    console.log("2 function start")
+    function resolveAfter(){
+        return new Promise((second)=>{
+            setInterval (()=> {
+                second("welcome a ");
+            },5000);
+        });
+    }
+
+    async function async() {
+        console.log("wait a 5 second ");
+        const main = await resolveAfter();
+        console.log(main)
+    }
+
+    async()
+    console.log("2 function end")
+    console.log("======================================")
+</script>
+
+</html>

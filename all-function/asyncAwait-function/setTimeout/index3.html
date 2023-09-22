@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    // 3) initilaization
+    console.log("3 function start")
+    function resolveAfter(){
+        return new Promise ((third)=>{
+            setTimeout (()=>{
+                third("Hello guys")
+            },3000)
+        });
+    }
+
+    async function async(){
+        console.log("wait a three second")
+        const data = await resolveAfter()
+        console.log(data)
+    }
+
+    async()
+    console.log("3 function end")
+    console.log("======================================")
+
+</script>
+
+</html>

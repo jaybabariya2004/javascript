@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // 9) initilaization
+
+    console.log("9 function start")
+   
+    function resolveAfter(){
+        return new Promise ((nine)=>{
+            setTimeout((nine)=>{
+                console.log("welcome to nine async function")
+            },3000)
+        });
+    }
+
+    async function async(){
+        console.log("wait for 3 second")
+        const data = await resolveAfter()
+        console.log(data)
+    }
+
+    async()
+    console.log("9 function end")
+    console.log("======================================")
+</script>
+</html>

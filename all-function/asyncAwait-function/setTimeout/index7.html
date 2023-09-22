@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // 7) initilaization
+
+    console.log("7 function start")
+   
+    function resolveAfter(){
+        return new Promise ((seven)=>{
+            setTimeout((seven)=>{
+                console.log("welcome to seven async function")
+            },3000)
+        });
+    }
+
+    async function async(){
+        console.log("wait for three seconds")
+        const data = await resolveAfter()
+        console.log(data)
+    }
+
+    async()
+    console.log("7 function end")
+    console.log("======================================")
+</script>
+</html>
