@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    //9) initilaization
+    function resolveAfter(){
+        return new Promise ((nine)=>{
+            setTimeout(() => {
+                nine("Recall")
+            }, 1000);
+        });
+    }
+
+    async function async(){
+        console.log("call")
+        const result = await resolveAfter()
+        console.log(result)
+    }
+
+    setInterval(()=>{
+        async()
+    },2000)
+</script>
+
+</html>
