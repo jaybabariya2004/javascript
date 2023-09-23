@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // 1) initilization
+
+    function name(data) {
+        sessionStorage.setItem("user",JSON.stringify(data))
+        JSON.parse(sessionStorage.getItem("user"))
+    }
+    let data = {
+        name: "jay",
+        age: 20,
+        language: "javascript"
+    }
+    //invoke
+    name(data)
+
+    // 2) initilization
+
+    function main(record){
+        sessionStorage.setItem("user",JSON.stringify(record))
+        JSON.parse(sessionStorage.getItem("user"))
+    }
+
+    let record = {
+        univercity: "veer narmad",
+        callge: "SMT.Z.S.PATEL",
+        institute: "RED & WHITE"
+    }
+
+    // invoke
+    main(record)
+
+    // 3) initilization
+
+    function third(car){
+        sessionStorage.setItem("user",JSON.stringify(car))
+        JSON.parse(sessionStorage.getItem("user"))
+    }
+
+    let car = {
+        hundai: "i20",
+        kia: "seltos",
+        ford: "figo"
+    }
+
+    //invoke
+    third(car)
+</script>
+</html>

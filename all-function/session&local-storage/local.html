@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+    // 1) initiliazation
+
+    function main() {
+        localStorage.setItem("user", JSON.stringify(data))
+        JSON.parse(localStorage.getItem("data"))
+    }
+    let data = {
+        name: "jay",
+        age: 20,
+    }
+
+    //invoke
+    main(data)
+
+    // 2) initialization
+
+    function second(car) {
+        localStorage.setItem("user",JSON.stringify(car))
+        JSON.parse(localStorage.getItem("user"))
+    }
+
+    let car = {
+        hundai: "i20",
+        kia: "seltos",
+        ford: "figo"
+    }
+
+    //invoke
+    second(car)
+</script>
+
+</html>
