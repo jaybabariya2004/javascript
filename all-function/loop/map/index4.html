@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4th map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        LP_name: "lenovo",
+        prise: 69999,
+    },
+    {
+        LP_name: "HP",
+        prise: 60000,
+    },
+    {
+        LP_name: "Dell",
+        prise: 50000,
+    }]
+
+    function test(data){
+        let result = data.map(a => a.prise)
+        return result
+    }
+
+    let main = test(data)
+    console.log("computer data",main)
+</script>
+</html>

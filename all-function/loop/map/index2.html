@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2nd map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        company: "suzuki",
+        carname: "swift",
+        prise: "7 lakh"
+    },
+    {
+        company: "hundai",
+        carname: "creta",
+        prise: "10 lakh"
+    },
+    {
+        company: "volkshvegan",
+        carname: "vento",
+        prise: "12 lakh"
+    }]
+
+    function main(data){
+        let result = data.map(a => a.company)
+        return result
+    }
+
+    let test = main(data)
+    console.log("Car record",test)
+</script>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3rd map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        name: "kohli",
+        age: 33,
+        T20: "20000 runs"
+    },
+    {
+        name: "rohit",
+        age: 34,
+        T20: "19000 runs" 
+    },
+    {
+        name: "gill",
+        age: 23,
+        T20: "1500 runs"
+    }]
+
+    function main(data){
+        let result = data.map(a => a.T20)
+        return result
+    }
+
+    let record = main(data)
+    console.log("cricket records",record)
+</script>
+</html>

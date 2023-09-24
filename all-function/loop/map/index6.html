@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6th map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        state: "gujrat",
+        language: "gujrati",
+        bussiness: "textile"
+    },
+    {
+        state: "mumbai",
+        language: "marathi",
+        bussiness: "dimond"
+    },
+    {
+        state: "punjab",
+        language: "punjabi",
+        bussiness: "auto part"
+    }]
+
+    function main(data){
+        let record = data.map(j => j.bussiness)
+        return record
+    }
+
+    let test = main(data)
+    console.log("state report",test)
+</script>
+</html>

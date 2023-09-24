@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>9th map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        movie: "3 idiots",
+        actor: "amir",
+    },
+    {
+        movie: "KGF",
+        actor: "rocky",
+    },
+    {
+        movie: "bahubali",
+        actor: "prbhas",
+    },
+    {
+        movie: "tiranga",
+        actor: "nana patekar",
+    }]
+
+    function main(data){
+        let test = data.map(jb => jb.movie)
+        return test
+    }
+
+    let result = main(data)
+    console.log("movie record",result)
+</script>
+</html>

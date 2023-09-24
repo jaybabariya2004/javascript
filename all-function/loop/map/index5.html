@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>5th map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        name: "kohali",
+        game_name: "cricket"
+    },
+    {
+        name: "john sinha",
+        game_name: "wwe"
+    },
+    {
+        name: "messi",
+        game_name: "football"
+    }]
+
+    function test(data){
+        let result = data.map(b => b.name)
+        return result
+    }
+
+    let main = test(data)
+    console.log(main)
+</script>
+</html>

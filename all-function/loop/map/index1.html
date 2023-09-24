@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1st map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        name: "jay babariya",
+        age: 20,
+        contact: 9876543211
+    },
+    {
+        name: "King kohli",
+        age: 33,
+        contact: 9877890654
+    },
+    {
+        name: "Rohit sharma",
+        age: 34,
+        contact:  7654321890
+    }]
+
+    function main(data){
+        let result = data.map(a => a.contact)
+        return result
+    }
+
+    let test = main(data)
+    console.log("User record",test)
+</script>
+</html>

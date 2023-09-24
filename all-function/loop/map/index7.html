@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7th map</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    let data = [{
+        area: "mota varachha",
+        sociaty: "mahashay",
+        pepole: 250
+    },
+    {
+        area: "yogi chowk",
+        sociaty: "vinayak",
+        pepole: 300
+    },
+    {
+        area: "katargam",
+        sociaty: "sagun",
+        pepole: 500
+    }]
+
+    function record(data){
+        let main = data.map(j => j.area)
+        return main
+    }
+
+    let test = record(data)
+    console.log("area record",test)
+</script>
+</html>
