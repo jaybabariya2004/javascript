@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <button onclick="addData('Jay','Babariya')">Add Name</button>
+    <button onclick="removeData()">Remove Name</button>
+    <button onclick="color()">Change Color</button>
+    <h1 id="view"></h1>
+</body>
+
+<script>
+
+    function addData(fname,lname){
+        let fullName = fname + " " + lname;
+        document.getElementById('view').innerHTML = fullName 
+    }
+
+    function removeData(){
+        document.getElementById('view').innerHTML = ""
+    }
+
+    function color(){
+        let test = '#'+(Math.random() * 0xFFFFFF << 0).toString(16).padStart(6, '0');
+        document.getElementById('view').style.color = test
+    }
+
+    setInterval(()=>{
+        color()
+    },1000)
+</script>
+
+</html>
