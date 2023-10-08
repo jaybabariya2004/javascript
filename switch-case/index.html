@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="print"></h1>
+</body>
+<script>
+
+    let marks = 90;
+    
+    switch(marks){
+        case 90:
+            marks = marks + "marks" +" "  + "Excellent Nice Result ";
+            break;
+        case 70:
+            marks = marks + "marks" +" "  + "Very Good";
+            break;
+        case 50:
+            marks = marks + "marks" +" "  + "Good";
+            break;
+        case 33:
+            marks = marks + "marks" +" "  + "Oops Better Luck Next Time";
+            break;
+        default :
+            marks = "Enter a valid marks"
+            
+    }
+    document.getElementById('print').innerHTML= "Marks = " + marks;
+
+</script>
+</html>
