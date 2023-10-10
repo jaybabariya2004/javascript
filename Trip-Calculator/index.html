@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <input type="number" id="Distance" placeholder="Enter a distance">
+    <input type="number" id="Fuel_prise" placeholder="Enter a fuel prise">
+    <input type="number" id="Fuel_liters" placeholder="Enter a fuel liters">
+    <input type="number" id="Cost" placeholder="Cost">
+    <hr>
+    <button type="submit" onclick="calculate()">Submit</button>
+    <hr>
+
+</body>
+<script>
+
+    function calculate() {
+        let distance = document.getElementById('Distance').value
+        let fuel_prise = document.getElementById('Fuel_prise').value
+        let fuel_liters = document.getElementById('Fuel_liters').value
+        let trip = ((fuel_prise * fuel_liters)/100) * distance;
+
+        document.getElementById('Cost').value = trip
+
+    }
+
+</script>
+
+</html>
