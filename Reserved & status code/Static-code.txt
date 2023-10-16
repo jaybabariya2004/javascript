@@ -1,0 +1,74 @@
+*Static Code*
+
+=>Information Response:-
+1. 100-continue
+2. 101-switching protocols
+3. 102-processing
+4. 103-Early hints
+
+=>Successful Response:-
+5. 200- ok
+6. 201-created
+7. 202-Acepted
+8. 203-Non-Authoritive Informtion
+9. 204-No Content
+10.205-Rst Content
+11.206-Partical Content
+12.207-Multi - status
+13.208-Already Reported
+14.226-IM Used
+
+=>Redirection message:-
+15.300-Multiple choice
+16.301-Moved Permanetly
+17.302-found
+18.303-see other
+19.304-Not Modified
+20.305-use property
+21.306-unused
+22.307-Temporary Redirect
+23.308-Permanent Redirect
+
+=>Client error response:-
+24.400-Bad Request
+25.401-Unauthorized
+26.402-Payment Required
+27.403-Forbidden
+28.404-Not Found
+29.405-Method Not Allowed
+30.406-Not Acceptable
+31.407-Proxy Authentication Required
+32.408-Request Timeout
+33.409-conflict
+34.410-gone
+35.411-length required
+36.412-precondition failed
+37.413-payload too large
+38.414-URI too long
+39.415-unsupported media type
+40.416-Range not satisfiable
+41.417-Expectation filed
+42.418-I'm a teapot
+43.421-Misdirected request
+44.422-Unprocessable content
+45.423-locked
+46.424-failed dependency
+47.425-Too early
+48.426-Upgrade Required
+49.428-precondition required
+50.429-Too Many Request
+51.431-Request header fields too large
+52.451-Unavailable for legal response
+
+=>Server Error Response:-
+53.500-Internal server error
+54.501-Not Emplemented
+55.502-Bad getway
+56.503-service unavailable
+57.504-gateway timeout
+58.505-HTTP version not supported
+59.506-varient also negotiates
+60.507-Insufficient storage
+61.508-loop detected
+62.510-not extended
+63.511.network authentication required 
