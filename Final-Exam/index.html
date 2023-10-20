@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body id="background">
+    <!-- Fetch Data and Print in html -->
+    <h3 id="head"></h3>
+    <!-- Add Data & Remove data -->
+    <p id="first"></p>
+    <!-- Random Color Generate and Background change -->
+    <h1>Task List</h1>
+  <input type="text" id="taskInput" placeholder="Add a new task">
+  <button onclick="addTask()">Add Task</button>
+</body>
+<script>
+
+    // Fetch Data and Print in html
+    async function async(){
+        let response = await fetch("https://random-data-api.com/api/v2/banks");
+        console.log(response.status);
+        let data = await response.json();
+        if(response.status == 200){
+            console.log(data,"data");
+        }else{
+            console.log("Data Not Found");
+        }
+        let main = [data]
+        let record = main.map(x => x.bank_name)
+        document.getElementById('head').innerHTML = "Map" + "=>" + " " + record;
+    }
+
+    // invoke
+    async()
+
+    // Add Data & Remove data
+
+    function addTask(){
+        let taskInput = document.getElementById('taskInput')
+        let taskShow = taskInput.value;
+        if(taskShow != ""){
+            let newTask = JSON.parse(localStorage.getItem("task")) ?? []
+            newTask.push(taskShow);
+            localStorage.setItem("task",JSON.stringify(taskShow));
+            taskInput.value = "";
+            displayTasks();
+        }
+    }
+    function displayTasks(){
+        let taskList = document.getElementById('taskList');
+        let newTask = JSON.parse(localStorage.getItem("task")) ?? []
+        taskList.innerHTML = "";
+        newTask.map((task,id) => {
+            let li = document.createElement("li");
+            li.textContent = task;
+            let deleteBtn = document.createElement('button');
+            deleteBtn.textContent = "Delete Record";
+            deleteBtn.onclick = () => deleteTask(id);
+            li.appendChild(deleteBtn);
+            taskList.appendChild(li);
+        })
+    }
+    function deleteTask(id){
+        let newTask = JSON.parse(localStorage.getItem('task')) ?? [];
+        if(id>=0 && id < newTask.length){
+            newTask.splice(id,1);
+            localStorage.setItem("task",JSON.stringify(newTask));
+            displayTasks();
+        }
+    }
+    displayTasks()
+
+    // Random Color Generate and Background change
+    function mainColor(){
+        let red = parseInt(Math.random() * 256);
+        let green = parseInt(Math.random() * 256);
+        let blue = parseInt(Math.random() * 256);
+        let color = `rgb(${red},${green},${blue})`;
+        document.body.style.background = color;
+    }
+    window.onload = mainColor;
+    setInterval(() => {
+        onload()
+    }, 10000)
+</script>
+</html>
